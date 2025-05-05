@@ -1,1 +1,1 @@
-export const API_URL = "http://10.0.0.56:3000";
+export const API_URL = "https://hh-autoapply-backend.onrender.com";
