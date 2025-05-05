@@ -1,10 +1,13 @@
 {
   "expo": {
+    "scheme": "hhautoapply",
+    "deepLinking": true,
+    "platforms": ["ios", "android"],
     "name": "hh-autoapply-app",
     "slug": "hh-autoapply-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/aa-logo.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
@@ -13,14 +16,22 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "com.yourcompany.hhautoapply",
+      "supportsTablet": true,
+      "associatedDomains": ["applinks:hhautoapply.com"]
     },
     "android": {
+      "permissions": ["ACCESS_BACKGROUND_LOCATION", "FOREGROUND_SERVICE"],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       }
     },
+    "plugins": [
+      [
+        "expo-task-manager"
+      ]
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
     }
